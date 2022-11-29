@@ -33,11 +33,4 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-//baseUrl/ürünler/kalem/1
-// baseUrl/home/index
-//baseUrl/home/privacy
-
-//https://localhost:7098/
-//https://www.mysite.com
 app.Run();

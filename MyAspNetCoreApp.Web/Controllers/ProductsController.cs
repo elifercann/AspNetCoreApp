@@ -15,8 +15,6 @@ namespace MyAspNetCoreApp.Web.Controllers
             _helper = helper;   
             _context = context;
 
-            
-
         }
         public IActionResult Index()
         {
