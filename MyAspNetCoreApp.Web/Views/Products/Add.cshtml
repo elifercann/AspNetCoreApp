@@ -6,18 +6,34 @@
 @model Product
 <h1>Ürün ekleme</h1>
 <form asp-controller="Products" asp-action="Add" method="post" >
-    <label>Ürün İsmi</label>
-    <input type="text" asp-for="Name" />
-    <br />
-    <label>Ürün Fiyatı</label>
-    <input type="text" asp-for="Price" />
-    <br />
-    <label>Ürün Stok</label>
-    <input type="text" asp-for="Stock" />
-    <br />
-    <label>Ürün Renk</label>
-    <input type="text" asp-for="Color" />
-    <br />
-    <button type="submit">Ürün Kaydet</button>
+
+    <div class="mb-3">
+        <label for="Name" class="form-label">Ürün İsmi: </label>
+        <input class="form-control" asp-for="Name">
+        
+    </div>
+    <div class="mb-3">
+        <label for="Price" class="form-label">Ürün Fiyatı: </label>
+        <input class="form-control" asp-for="Price">
+
+    </div>
+    <div class="mb-3">
+        <label for="Stock" class="form-label">Ürün Stok: </label>
+        <input class="form-control" asp-for="Stock">
+
+    </div>
+    <div class="mb-3">
+        <label for="Color" class="form-label">Ürün Renk: </label>
+        <input class="form-control" asp-for="Color">
+
+    </div>
+
+    <div class="mb-3">
+        <input class="form-check-input mt-0" asp-for="IsPublish">
+        <label class="mb-3"> Yayınlansın mı?</label>
+       
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Ürün Kaydet</button>
 
 </form>
